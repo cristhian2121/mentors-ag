@@ -1,12 +1,12 @@
-# **Mentorship AI Platform**
+# Mentorship AI Platform
 
-## **Overview**
+## Overview
 
 This project is a centralized mentorship AI system built using **LangChain**. It provides intelligent, topic-specific agents to assist mentors and mentees across 20 different mentorship areas. The system uses a single centralized agent to route user queries to the appropriate knowledge base and provide relevant answers.
 
 ---
 
-## **Features**
+## Features
 
 - **Centralized Routing**: Dynamically directs queries to topic-specific knowledge bases.
 - **Customizable Knowledge Bases**: Each mentorship area has its curated resources for accurate and meaningful responses.
@@ -16,7 +16,7 @@ This project is a centralized mentorship AI system built using **LangChain**. It
 
 ---
 
-## **Tech Stack**
+## Tech Stack
 
 - **Python**: Programming language for backend logic.
 - **LangChain**: Framework for building conversational AI with LLMs.
@@ -25,11 +25,27 @@ This project is a centralized mentorship AI system built using **LangChain**. It
 - **Flask**: Web framework for serving the centralized AI system.
 - **Docker**: Containerization for deployment (optional).
 
----
+### Project Structure
 
-## **Getting Started**
+```plaintext
+mentors-ag/
+│
+├── data/                       # Knowledge base files for mentorship topics
+│   ├── career_growth.txt
+│   ├── programming.txt
+│   └── ...
+│
+├── app.py                      # Flask application for serving the API
+├── agents.py                   # Centralized routing logic
+├── chains.py                   # Retrieval chains for each topic
+├── vector_store.py             # Code for embedding and storing knowledge bases
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
+```
 
-### **Prerequisites**
+## Getting Started
+
+### Prerequisites
 
 1. Python 3.8 or higher installed.
 2. API keys for:
