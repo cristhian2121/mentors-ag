@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mentors-ag"
+version = "0.1.0"
+description = "Centralized mentorship AI system"
+authors = ["Cristhian <ccdelgadop@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mentors_ag"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.3.14"
+openai = "^1.59.8"
+faiss-cpu = "^1.9.0.post1"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+pydantic-settings = "^2.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

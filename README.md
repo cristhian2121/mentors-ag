@@ -47,10 +47,16 @@ mentors-ag/
 
 ### Prerequisites
 
-1. Python 3.8 or higher installed.
+1. Python 3.11 or higher installed.
 2. API keys for:
-   - OpenAI (for GPT-4 or GPT-3.5 models).
-3. Install the required Python libraries:
-   ```bash
-   pip install langchain openai faiss-cpu flask
-   ```
+   - OpenAI (for model).
+
+### Run project
+
+- **Active envrironment:** `poetry shell`
+- **Run project (dev):** `poetry run fastapi dev main.py`
+
+### Utils
+
+- **Close environment:** `exit`
+- **export to txt:** `poetry export -f requirements.txt --output requirements.txt`
